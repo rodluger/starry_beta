@@ -171,7 +171,7 @@ setup(
     license="GPL",
     packages=find_packages(),
     ext_modules=ext_modules,
-    install_requires=["pybind11>=2.2"],
+    install_requires=["pybind11==2.2", "numpy", "matplotlib"],
     cmdclass={"build_ext": BuildExt},
     data_files=[("starry_beta.maps", glob.glob("starry_beta/maps/*.jpg"))],
     include_package_data=True,
